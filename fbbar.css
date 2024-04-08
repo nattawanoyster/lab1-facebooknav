@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    /* background-color: lightsalmon; */
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+    box-shadow: 4px 4px 8px #ddd;
+}
+
+nav.left {
+    /* border: 1px dashed darkgreen; */
+    width: 320px;
+    display: flex;
+    gap: 8px;
+    align-items: center; /* to make input's box stay in the middle*/
+}
+nav.left input {
+    height: 40px;
+    border: none; /* to delete the border line*/
+    border-radius: 30px;
+    padding-inline: 8px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+nav.center {
+    /* border: 1px dashed blue; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* obj will be in the middle*/
+    gap: 8px; /* spacing between obj*/
+}
+nav.center .box-icon {
+    /* background-color: wheat; */
+    width: 129px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+nav.center .box-icon:hover {
+    background-color: rgb(247, 247, 247);
+    border-bottom: 3px solid black;
+}
+
+nav.right {
+    /* border: 1px dashed darkslategray; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+nav.right .right-icon {
+    width: 40px;
+    height:40px;
+    display: flex;
+    background-color: #e4e6eb;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;   
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    background-color: rgb(239, 239, 239);
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.main-wrapper .sidebar-left {
+    border: 1px dashed darkblue;
+    min-height: 100vh;
+    flex-basis: 360px;
+}
+.main-wrapper .newfeed {
+    border: 1px dashed darkcyan;
+    min-height: 100vh;
+    flex-basis: 680px;
+}
+.main-wrapper .sidebar-right {
+    border: 1px dashed darkred;
+    min-height: 100vh;
+    flex-basis: 360px;
+}
+
